@@ -1,0 +1,133 @@
+body{
+    background: #efff;
+    font-family: "inim",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: gainsboro;
+    }
+    a{
+        text-decoration: none;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+  h1,h2,h3,h4,h5{
+      color: black;
+  }
+  header{
+      position:relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+        }
+    header .navbar-brand{
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            font-size: 1.6em;
+            font-weight: 500;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                  }
+                  
+     header .navbar-brand span{
+              color:purple!important;
+                 }
+      header .navbar{
+          padding-top: 0;
+          padding-bottom: 0;
+          background-image: gray!important;
+      }
+      @media (max-width: 1200px){
+        header .navbar{
+            padding-top: 0;
+            padding-bottom:  .5em;
+            background: gray!important;
+        }
+          }
+          header .navbar .nav-link{
+              padding: 1rem 1rem;
+              outline: none!important;
+          }
+
+ @media (max-width: 1200px){
+        header .navbar .nav-link{
+            padding: 1.7rem 1rem;
+        }
+          }
+    header .navbar .nav-link.active{
+        color:purple!important;
+            }
+            header .navbar dropdown-menu {
+                font-size: 14px;
+                border-radius: 10px;
+                border: none;
+                -webkit-box-shadow: 0 2px 30px 0px rgba(0,0,0,0.2);
+                box-shadow: 0 2px 30px 0px rgba(0,0,0,0.2);
+                min-width: 13em; 
+                margin-top: -10px;
+            }
+            header .navbar dropdown-menu ::before{
+                bottom: 100%;
+                left:10%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-bottom-color: white;
+                border-width: 10px;
+            }
+            header .navbar .dropdown-menu .dropdown-item:hover{
+                background:red;
+                color: white;
+            }
+            header .navbar .dropdown-menu .dropdown-item:active{
+                background:rgb(255, 0, 191);
+                color: white;
+            }
+            .section{
+                padding: 7em 0;
+            }
+            .owl-carousel owl-item {
+                opacity: .4;
+            }
+            .owl-carousel owl-item.active {
+                opacity: 1;
+            }
+
+            .owl-carousel .owl-nav{
+                position:absolute;
+                top:50%;
+                width: 100%;
+            }
+            .owl-carousel .owl-nav .owl-prev,
+            .owl-carousel .owl-nav .owl-next{
+            position: absolute;
+            margin-top: -10px;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            }
+            .owl-carousel .owl-nav .owl-prev:hover,
+            .owl-carousel .owl-nav .owl-prev:focus,
+            .owl-carousel .owl-nav .owl-prev:active,
+            .owl-carousel .owl-nav .owl-next:active,
+            .owl-carousel .owl-nav .owl-next:focus,
+            .owl-carousel .owl-nav .owl-next:active{
+                outline: none;
+                }
+                .owl-carousel .owl-nav .owl-prev span::before,
+                .owl-carousel .owl-nav .owl-next:active span::before{
+                font-size: 40px;
+                }
+                .owl-carousel .owl-nav .owl-prev{
+                    left: 30px!important;
+                }
+                .owl-carousel .owl-nav .owl-next{
+                    right: 30px!important;
+                }
